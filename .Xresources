@@ -1,0 +1,132 @@
+! ----
+! Font
+! ----
+URxvt*font:            xft:terminus:pixelsize=8
+URxvt*boldFont:        xft:terminus:pixelsize=8
+
+! ------
+! Colors
+! ------
+
+! Background color
+URxvt*background: #1F1E26
+
+! Font color
+URxvt*foreground: #FCEBD1
+
+! Cursor color
+urxvt*cursorColor: #F83B5D
+
+!Black
+*color0:    #21202D
+*color8:    #413646
+
+!Red
+*color1:    #EF5254
+*color9:    #FE6752
+
+!Green
+*color2:    #0BB9BA
+*color10:   #05DFDC
+
+!Yelllow
+*color3:    #B8A0A0
+*color11:   #E8C3A6
+
+!Blue
+*color4:    #479493
+*color12:   #67D6C1
+
+!Magenta
+*color5:    #514D5F
+*color13:   #A69EB6
+
+!Cyan
+*color6:    #476594
+*color14:   #6DA4DF
+
+!White
+*color7:    #E5EEF8
+*color15:   #FFFFFF
+
+
+!------------
+! copy paste
+!------------
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
+URxvt.iso14755: False
+
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+! ------------
+! Misc options 
+! ------------
+URxvt.termName:          rxvt-256color
+URxvt*urgentOnBell:      true
+URxvt*visualBell:        true
+URxvt*skipBuiltinGlyphs: true
+urxvt.borderLess:        true 
+URxvt.scrollBar: false
+URxvt*geometry:          98x25
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.url-launcher: /usr/bin/palemoon
+URxvt.matcher.button: 1
+
+!------
+! icons
+!------
+nautilus*iconFile:			/usr/share/icons/ultra-flat-icons/apps/scalable/nautilus.svg
+ncmpcpp*iconFile:			/usr/share/icons/ultra-flat-icons/apps/scalable/bino.svg
+URxvt*iconFile:            /usr/share/icons/ultra-flat-icons/apps/scalable/urxvt.svg
+IRC*iconFile:              /usr/share/icons/ultra-flat-icons/apps/scalable/irc.svg
+MUSIC*iconFile:             /usr/share/icons/ultra-flat-icons/apps/scalable/smplayer.svg
+WEATHER*iconFile:          /usr/share/icons/ultra-flat-icons/apps/scalable/aweather.svg       
+CLOCK*iconFile:           /usr/share/icons/ultra-flat-icons/apps/scalable/unity-datetime-panel.svg
+FILEM*iconFile:           /usr/share/icons/ultra-flat-icons/places/scalable/folder-pink.svg
+PODCAST*iconFile:             /usr/share/icons/ultra-flat-icons/devices/scalable/audio-input-microphone.svg
+FBMESSENGER*iconFile:          /usr/share/icons/ultra-flat-icons/apps/scalable/facebook.svg
+feh*iconFile:				/usr/share/icons/ultra-flat-icons/apps/scalable/gcolor2.svg
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintmedium
+
+
+xscreensaver.splash: false
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #E7DDDD
+xscreensaver.Dialog.background:         #21202D
+xscreensaver.Dialog.topShadowColor:     #21202D
+xscreensaver.Dialog.bottomShadowColor:  #21202D
+xscreensaver.Dialog.Button.foreground:  #514D5F
+xscreensaver.Dialog.Button.background:  #E7DDDD
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #413646
+xscreensaver.Dialog.text.background:    #EEF6FF
+xscreensaver.Dialog.internalBorderWidth:10
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #B8A0A0
+xscreensaver.passwd.thermometer.background:  #ED6F71
+xscreensaver.passwd.thermometer.width:       8
+
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+
