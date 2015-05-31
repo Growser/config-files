@@ -1,6 +1,6 @@
-#mpd_host = "192.168.1.90"
+#mpd_host = "192.168.1.xx"
 mpd_port = "6600"
-mpd_music_dir = "/home/growser/Music/"
+mpd_music_dir = "/home/xxxx/Music/"
 visualizer_fifo_path = /tmp/mpd.fifo
 visualizer_output_name = fifompd
 visualizer_sync_interval = 30 
